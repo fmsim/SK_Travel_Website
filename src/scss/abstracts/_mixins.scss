@@ -7,3 +7,10 @@
   width: $width;
   height: $height;
 }
+
+@mixin align($flex, $justify-content, $align-items, $height) {
+  display: $flex;
+  justify-content: $justify-content;
+  align-items: $align-items;
+  height: $height;
+}
