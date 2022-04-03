@@ -26,16 +26,19 @@
           font-size: 4.2rem;
           font-weight: 900;
           line-height: 2.8rem;
+          @include mixins.animation(heading, 1s, ease-in, -8rem, 0);
         }
 
         &__p {
           margin-top: 0.8rem;
           color: variables.$white;
           font-size: 1.5rem;
+          @include mixins.animation(subHeading, 1s, ease-out, -10rem, 0);
         }
 
-        __link {
+        &__link {
           margin-top: 0.8rem;
+          @include mixins.animation(headerButton, 1s, ease-out, 8rem, 0);
         }
       }
     }
